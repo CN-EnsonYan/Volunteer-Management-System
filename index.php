@@ -179,7 +179,7 @@ $langregstatusword=$langregservicestatusstop;
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
-    var u="//analytics.ensonyan.com/";
+    var u="//analytics.example.com/";
     _paq.push(['setTrackerUrl', u+'piwik.php']);
     _paq.push(['setSiteId', '3']);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
@@ -639,7 +639,7 @@ $langregstatusword=$langregservicestatusstop;
                     </div>        
                     <div class="footer-logo-divider"></div>
                     <div class="footer-mail">            
-                        <a href="mailto:admin@ensonyan.com">admin@ensonyan.com</a>
+                        <a href="mailto:admin#ensonyan.com">admin#ensonyan.com</a>
                     </div>
                     <div class="footer-social-divider"></div>
                     <div class="footer-area-enc">
@@ -668,6 +668,6 @@ $langregstatusword=$langregservicestatusstop;
 
         <!--Load JavaScript-->
         <script src="js/??jquery.js,jquery.sticky.js,tipper.js,jarallax.js,jarallax-element.min.js,imagesloaded.pkgd.js,jquery.fitvids.js,jquery.smartmenus.min.js,isotope.pkgd.js,owl.carousel.min.js,jquery.sticky-kit.min.js,main.js"></script>
-        <script type="text/javascript" src="//js.users.51.la/20753639.js"></script>
+        <script type="text/javascript" src="//js.users.51.la/the_user_id.js"></script>
     </body>
 </html>
