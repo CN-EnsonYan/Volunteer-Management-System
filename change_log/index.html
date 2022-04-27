@@ -1,0 +1,309 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" />
+<html>
+<head>
+<title>Change Log - 变动历史 | EN-NP Volunteer Management System.</title>
+<style>
+table {
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0;
+    width: 100%;    
+}
+
+.bordered {
+    border: solid #ccc 1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px #ccc; 
+    -moz-box-shadow: 0 1px 1px #ccc; 
+    box-shadow: 0 1px 1px #ccc;         
+}
+
+.bordered tr:hover {
+    background: #fbf8e9;
+    -o-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;     
+}    
+
+.bordered td, .bordered th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;    
+}
+
+.bordered th {
+    background-color: #dce9f9;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+    background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:    -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:     -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:      -o-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:         linear-gradient(top, #ebf3fc, #dce9f9);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+    border-top: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+}
+
+.bordered td:first-child, .bordered th:first-child {
+    border-left: none;
+}
+
+.bordered th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+.bordered th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.bordered tr:last-child td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+
+.bordered tr:last-child td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+</style>
+</head>
+<body>
+<h2>Change Log / 变动历史</h2>
+<table class="bordered">
+    <thead>
+    <tr>
+        <th>Date / 日期</th>
+        <th>Version / 版本</th>
+        <th>Details / 备注（变动与新功能）</th>
+    </tr>
+    </thead>
+    <tr>
+        <td>2019.03.01</td>
+        <td>测试版 / Beta 1.0.0</td>
+        <td>VMS – 系统第一版初步框架编写，MySQL – 数据库第一次结构变动，Nginx 负载均衡初步搭建</td>
+    </tr>
+    <tr>
+        <td>2019.03 - 06</td>
+        <td>测试版 / Beta 1.0.1–7.2.2α</td>
+        <td>VMSV – 实名认证系统主程序构建，VMS – 志愿者后台主程序构建&优化，VMS – 管理员后台主程序构建&优化</td>
+    </tr>
+    <tr>
+        <td>2019.03 - 06（仅重要变动）</td>
+        <td>测试版 / Beta 1.0.1–7.2.2α</td>
+        <td>VMS – 首页（落地页）编写完成</td>
+    </tr>
+    <tr>
+        <td>2019.06.26</td>
+        <td>测试版 / Beta 7.2.3</td>
+        <td>VMS – 首页（落地页）粗略编写，PHP 程序架构优化、后端代码优化等</td>
+    </tr>
+    <tr>
+        <td>2019.07.01</td>
+        <td>测试版 / Beta 7.3.0</td>
+        <td>领事端各项功能优化，具体项目保密</td>
+    </tr>
+    <tr>
+        <td>2019.07.01</td>
+        <td>测试版 / Beta 7.3.1</td>
+        <td>移动端页面适配JS优化，（志愿证明图片）上传插件开发完毕</td>
+    </tr>
+    <tr>
+        <td>2019.07.03</td>
+        <td>测试版 / Beta 7.3.2</td>
+        <td>Session 机制&调用结构优化，PHP-FPM 优化，提高并行吞吐数量</td>
+    </tr>
+    <tr>
+        <td>2019.07.05</td>
+        <td>测试版 / Beta 7.3.3</td>
+        <td>MySQL –数据库第十九次结构变动，表结构优化</td>
+    </tr>
+	<tr>
+        <td>2019.07.05</td>
+        <td>测试版 / Beta 7.3.3α</td>
+        <td>代码走查，登陆接口紧急修复 - 问题已复现</td>
+    </tr>
+	<tr>
+        <td>2019.07.18</td>
+        <td>测试版 / Beta 7.3.3β</td>
+        <td>页面重定向方式优化</td>
+    </tr>
+	<tr>
+        <td>2019.07.21（重大更新）</td>
+        <td>测试版 / Beta 8.0.0</td>
+        <td>VMS – 系统全局国际化，简体中文 & 英语（美国）支持</td>
+    </tr>
+	<tr>
+        <td>2019.07.23</td>
+        <td>测试版 / Beta 8.0.1</td>
+        <td>VMSV – 系统全局国际化，简体中文 & 美式英语支持</td>
+    </tr>
+	<tr>
+        <td>2019.07.24</td>
+        <td>测试版 / Beta 8.0.2</td>
+        <td>PHP 性能优化，调整最大上传限制，图片上传插件优化</td>
+    </tr>
+	<tr>
+        <td>2019.07.25</td>
+        <td>测试版 / Beta 8.1.0</td>
+        <td>VMS - 新增管理员后台“关闭系统”与“关闭注册功能”开关</td>
+    </tr>
+	<tr>
+        <td>2019.07.26</td>
+        <td>测试版 / Beta 8.1.1</td>
+        <td>VMS – 首页（落地页）增加服务器异步状态监控列表</td>
+    </tr>
+	<tr>
+        <td>2019.07.27</td>
+        <td>测试版 / Beta 8.1.2</td>
+        <td>VMS – 首页（落地页）增加 VMS 主进程异步状态检测器</td>
+    </tr>
+	<tr>
+        <td>2019.07.28</td>
+        <td>测试版 / Beta 8.1.3</td>
+        <td>优化国际化支持，纠正部分英语（美国）非标准翻译</td>
+    </tr>
+	<tr>
+        <td>2019.07.30</td>
+        <td>无版本迭代 - N / A</td>
+        <td>部分代码片段丢失，原因未知，凌晨00:49进行镜像紧急回滚，持续3H</td>
+    </tr>
+	<tr>
+        <td>2019.07.30</td>
+        <td>测试版 / Beta 8.2.0</td>
+        <td>阿里云镜像回滚完成，排查片段丢失原因：服务器管理面板导致的 Cron 任务异常，删除了错误路径的文件</td>
+    </tr>
+	<tr>
+        <td>2019.08.03</td>
+        <td>测试版 / Beta 8.2.1</td>
+        <td>新增部分功能的国际化支持</td>
+    </tr>
+	<tr>
+        <td>2019.08.10</td>
+        <td>安卓客户端 | 无版本号 - N/A</td>
+        <td>VMS - 安卓客户端框架初版编译，使用开发语言：Flutter</td>
+    </tr>
+	<tr>
+        <td>2019.08.11</td>
+        <td>安卓客户端 | 测试版 / Beta 1.0.0_e576f39_190811</td>
+        <td>全局通用主页底端导航器文件 navigation_common.dart 编写完成</td>
+    </tr>
+	<tr>
+        <td>2019.08.20</td>
+        <td>测试版 / Beta 8.3.0</td>
+        <td>VMSV – 编写 PowerSchool 实名验证方式 API</td>
+    </tr>
+	<tr>
+        <td>2019.08.20</td>
+        <td>测试版 / Beta 8.3.1</td>
+        <td>VMSV – 添加 PowerSchool 验证接口多语言支持，共计5种语言</td>
+    </tr>
+	<tr>
+        <td>2019.08.21</td>
+        <td>测试版 / Beta 8.3.2</td>
+        <td>VMS – 志愿者 & 管理员后台界面原生 Marquee 滚动方式变更替换，改用jQuery-Marquee，去除滚动掉帧</td>
+    </tr>
+	<tr>
+        <td>2019.08.22</td>
+        <td>测试版 / Beta 9.0.0</td>
+        <td>VMS – 加强管理员后台防御，代码走查，排除并优化所有可能造成安全隐患的代码逻辑</td>
+    </tr>
+	<tr>
+        <td>2019.08.22</td>
+        <td>测试版 / Beta 9.0.1</td>
+        <td>Session+Cookies 调用逻辑优化，防止普通用户非法获得管理员权限</td>
+    </tr>
+	<tr>
+        <td>2019.08.22</td>
+        <td>测试版 / Beta 9.0.2</td>
+        <td>VMS – 管理员后台新增并优化PowerSchool审核相关功能</td>
+    </tr>
+	<tr>
+        <td>2019.08.23</td>
+        <td>测试版 / Beta 9.0.3</td>
+        <td>为首次注册登陆的用户增加教程引导步骤</td>
+    </tr>
+	<tr>
+        <td>2019.08.23</td>
+        <td>测试版 / Beta 9.1.0</td>
+        <td>系统各处静态资源优化，提高页面响应速度</td>
+    </tr>
+	<tr>
+        <td>2019.08.23</td>
+        <td>测试版 / Beta 9.1.1</td>
+        <td>VMS – 首页（落地页）增加 VMS 注册功能异步状态检测器</td>
+    </tr>
+	<tr>
+        <td>2019.08.23</td>
+        <td>测试版 / Beta 9.1.2</td>
+        <td>VMSV – PowerSchool验证方式改用后台封装Jar，实现SimLogin</td>
+    </tr>
+	<tr>
+        <td>2019.08.24</td>
+        <td>测试版 / Beta 9.1.3</td>
+        <td>VMS – 修复志愿者 & 管理员后台jQuery-Marquee DIV标签溢出问题</td>
+    </tr>
+	<tr>
+        <td>2019.08.27</td>
+        <td>测试版（最终版本） / Beta 9.2.0</td>
+        <td>VMS – 调整优化实名认证检测与教程对接方式</td>
+    </tr>
+	<tr>
+        <td>2019.08.28（公测版上线日）</td>
+        <td>公测版 / 1.0.0 - Stable</td>
+        <td>测试环境代码结构最终版优化。当日提交了《中华人民共和国国家版权局计算机软件著作权登记证书》申请材料</td>
+    </tr>
+	<tr>
+        <td>2019.08.30</td>
+        <td>公测版 / 1.0.0 - Stable</td>
+        <td>《中华人民共和国国家版权局计算机软件著作权登记证书》申请获批，等待版权局发证</td>
+    </tr>
+	<tr>
+        <td>2019.09.02</td>
+        <td>公测版 / 1.0.1 - Stable</td>
+        <td>VMS – 管理后台新增“批量修改行政班”功能</td>
+    </tr>
+	<tr>
+        <td>2019.09.03</td>
+        <td>公测版 / 1.0.1α - Stable</td>
+        <td>VMS – 管理后台新增“单个用户修改行政班”功能</td>
+    </tr>
+	<tr>
+        <td>2019.09.04</td>
+        <td>公测版 / 1.0.2 - Stable</td>
+        <td>系统全局 – 用户行为LOG记录系统全面上线</td>
+    </tr>
+	<tr>
+        <td>2019.09.05</td>
+        <td>公测版 / 1.0.3 - Stable</td>
+        <td>初步接入中华人民共和国公安部第二代身份证二要素真实性核验API接口</td>
+    </tr>
+	<tr>
+        <td>2019.09.06</td>
+        <td>公测版 / 1.1.0 - Stable</td>
+        <td>新增领事账号多行政班绑定功能</td>
+    </tr>
+	<tr>
+        <td>2019.09.10</td>
+        <td>公测版 / 1.1.1 - Stable</td>
+        <td>优化领事账号多行政班绑定功能</td>
+    </tr>
+	<tr>
+        <td>2019.10.10</td>
+        <td>无版本迭代(软著登记标识版本号：V1.0.0)</td>
+        <td>《中华人民共和国国家版权局计算机软件著作权登记证书》成功发证，软著证书编号：软著登字第4444533号，软著登记编号：2019SR1023776</td>
+    </tr>
+</table>
+</body>
+</html>

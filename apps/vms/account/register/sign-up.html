@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="theme-color" content="#5B9BD5">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>EN-NetworkProject VMS | Register Page. 用户注册 - 志愿者信息管理系统. Powered By EnsonYan !</title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/vector.js"></script>
+<script type="text/javascript" src="common/js/filter.js"></script>
+  
+<style>.select {
+		display: inline-block;
+		width: 300px;
+		position: relative;
+		vertical-align: middle;
+		padding: 0;
+		overflow: hidden;
+		background-color: #fff;
+		color: #555;
+		border: 1px solid #aaa;
+		text-shadow: none;
+		border-radius: 4px;	
+		transition: box-shadow 0.25s ease;
+		z-index: 2;
+	}
+ 
+	.select:hover {
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+	}
+ 
+	.select:before {
+		content: "";
+		position: absolute;
+		width: 0;
+		height: 0;
+		border: 10px solid transparent;
+		border-top-color: #ccc;
+		top: 14px;
+		right: 10px;
+		cursor: pointer;
+		z-index: -2;
+	}
+	.select select {
+		cursor: pointer;
+		padding: 10px;
+		width: 100%;
+		border: none;
+		background: transparent;
+		background-image: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+ 
+	.select select:focus {
+		outline: none;
+	}
+</style>
+<style type="text/css">
+    select{width:50px;}
+</style>
+
+</head>
+<!-- Analytics -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.ensonyan.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '3']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Analytics Code -->
+<body>
+
+<div id="container">
+	<div id="output">
+		<div class="containerT">
+          <img src="/apps/vms/img/enlogo.svg" height="35" alt="EN-Logo" title="An EnsonYan Studio's Project" />
+			<h1>Volunteer Sign-Up | 成为志愿者</h1>
+			<form name="LoginForm" method="post" action="sign-up.php" onSubmit="return InputCheck(this)">
+				<input type="text" placeholder="Username 真实姓名" id="entry_name" name="entry_name" onkeypress="Filter()" onpaste="return false" value="">
+				<input type="password" placeholder="Password 密码" id="entry_password" name="entry_password" onkeypress="Filter()" onpaste="return false">
+              <div class="select">
+                        <select name="entry_homeroom">
+                            <option value="Homeroom" style="display: none">Homeroom 选择行政班</option>
+                            <option value="Pre10-01">Pre10-01</option>
+                            <option value="Pre10-02">Pre10-02</option>
+                            <option value="Pre10-03">Pre10-03</option>
+                            <option value="1001">1001</option>
+                            <option value="1002">1002</option>
+                            <option value="1003">1003</option>
+                            <option value="1004">1004</option>
+                            <option value="1005">1005</option>
+                            <option value="1006">1006</option>
+                            <option value="1007">1007</option>
+                            <option value="1101">1101</option>
+                            <option value="1102">1102</option>
+                            <option value="1103">1103</option>
+                            <option value="1104">1104</option>
+                            <option value="1105">1105</option>
+                            <option value="1106">1106</option>
+                            <option value="1107">1107</option>
+                            <option value="1201">1201</option>
+                            <option value="1202">1202</option>
+                            <option value="1203">1203</option>
+                            <option value="1204">1204</option>
+                            <option value="1205">1205</option>
+                            <option value="1206">1206</option>
+                            <option value="1207">1207</option>
+                        </select>
+               </div>
+              <br><br>
+				<button type="submit" name="submit" id="entry_btn">Confirm / 提交注册</button>
+                <button type="button" name="return" onclick="javascrtpt:window.location.href='/apps/vms/account/login/index.html?req=2&ref=https%3A%2F%2Fvolunteer.ensonyan.com%2Faccount%2Flogin%2Findex.html'">Return / 返回登陆</button>
+				<div id="prompt" class="prompt"></div>
+			</form>
+    <div style="position:relative;bottom:0">
+      <font color="#000000">&copy; 2018-<script>document.write(new Date().getFullYear());</script> <a style="text-decoration:none; color: #000000;" href="https://www.ensonyan.com" target="_blank">EnsonYan</a>. All Rights Reserved.</font> <button onclick="javascript:window.location.href='http://redir.sh47.ensonyan.com/4/ecom/redir.htm?fp=ecom_b0a443b2533f7b3d292a92232646bc2e'">Visitors Rec.</button><br><br>
+      工信部许可证号：<a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow noreferrer" style="text-decoration:none; color:#fff">沪ICP备17046167号-4</a><br>
+          <img data-src="//img.alicdn.com/tfs/TB1..50QpXXXXX7XpXXXXXXXXXX-40-40.png" style="height:16px;width:18px" src="//img.alicdn.com/tfs/TB1..50QpXXXXX7XpXXXXXXXXXX-40-40.png" data-spm-anchor-id="5176.12825654.7y9jhqsfz.i0.e9392c4aW65E8d"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011702005532" target="_blank" title="查看网安联网备案信息" alt="网安联网备案信息" rel="nofollow"><span style="background:#e3e3e3;border-radius:3px;border:1px">沪公网安备 31011702005532 号</span></a><br><br>
+
+<a target="_blank" href="https://www.w3.org/WAI/WCAG2AA-Conformance" rel="nofollow"><img src="/apps/vms/img/footer/wcag2AA.gif" alt="Explanation of WCAG 2.0 Level Double-A Conformance" title="Explanation of WCAG 2.0 Level Double-A Conformance"></a>
+  <img src="https://global.ecdn.ltd/direct_path/public/images/ssl_logos/globalsign/oem/white/medium.png" style="height:31px" onclick="window.open('https://myssl.com/seal/detail?domain=volunteer.ensonyan.com','Secured by GlobalSign | 由 GlobalSign SSL提供加密服务','height=800,width=470,top=0,right=0,toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no')" title="CLICK TO VERIFY: This site uses a GlobalSign SSL Certificate to secure your personal information.">
+  </div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        Victor("container", "output");//登录背景函数
+        $("#entry_name").focus();
+        $(document).keydown(function(event){
+            if(event.keyCode==13){
+                $("#entry_btn").click();
+            }
+        });
+    });
+</script>
+</body>
+</html>

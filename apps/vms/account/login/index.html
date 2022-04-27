@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#5B9BD5">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>EN-NetworkProject VMS | Login Page. 用户登录 - 志愿者信息管理系统. Powered By EnsonYan !</title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/vector.js"></script>
+<script type="text/javascript" src="common/js/filter.js"></script>
+
+    <script type="text/javascript">
+　　var type = navigator.appName;
+    lang_exist=document.cookie.indexOf("userLang=");//判断Cookie_userLang是否已存在
+	if(lang_exist == -1){
+　　if (type == "Netscape"){
+    　　var lang = navigator.language;//获取浏览器配置语言，支持非IE浏览器
+　　}else{
+    　　var lang = navigator.userLanguage;//获取浏览器配置语言，支持IE5+ == navigator.systemLanguage
+　　};
+　　var lang = lang.substr(0, 2);//获取浏览器配置语言前两位
+　　if (lang === "zh"){
+   　　 document.cookie="userLang=cn; domain=.ensonyan.com; path=/";
+　　}else if (lang === "en"){
+   　　 document.cookie="userLang=en; domain=.ensonyan.com; path=/";
+　　}else{//其他语言编码
+   　　 document.cookie="userLang=en; domain=.ensonyan.com; path=/";
+　　}
+
+    location.reload();
+
+    }
+
+    </script>
+
+<!-- Analytics -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.ensonyan.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '3']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Analytics Code -->
+</head>
+<body>
+
+<div id="container">
+	<div id="output">
+		<div class="containerT">
+          <img src="/apps/vms/img/enlogo.svg" height="35" alt="EN-Logo" title="An EnsonYan Studio's Project" />
+			<h1>Authentification | 登陆验证</h1>
+			<form name="LoginForm" method="post" action="auth.php" onSubmit="return InputCheck(this)">
+				<input type="text" placeholder="Username 用户名" id="entry_name" name="entry_name" onkeypress="Filter()" onpaste="return false" value="">
+				<input type="password" placeholder="Password 密码" id="entry_password" name="entry_password" onkeypress="Filter()" onpaste="return false">
+				<button type="submit" name="submit" id="entry_btn">Sign In / 登录系统</button><button type="button" name="submit" onclick="javascrtpt:window.location.href='/apps/vms/account/register/sign-up.html?ref=https%3A%2F%2Fvolunteer.ensonyan.com%2Faccount%2Flogin%2Findex.html'">Sign Up / 成为志愿者</button>
+				<div id="prompt" class="prompt"></div>
+			</form>
+    <div style="position:relative;bottom:0">
+      <font color="#000000">&copy; 2018-<script>document.write(new Date().getFullYear());</script> <a style="text-decoration:none; color: #000000;" href="https://www.ensonyan.com" target="_blank">EnsonYan</a>. All Rights Reserved.</font> <button onclick="javascript:window.location.href='http://redir.sh47.ensonyan.com/4/ecom/redir.htm?fp=ecom_b0a443b2533f7b3d292a92232646bc2e'">Visitors Rec.</button><br><br>
+          工信部许可证号：<a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow noreferrer" style="text-decoration:none; color:#fff">沪ICP备17046167号-4</a><br>
+          <img data-src="//img.alicdn.com/tfs/TB1..50QpXXXXX7XpXXXXXXXXXX-40-40.png" style="height:16px;width:18px" src="//img.alicdn.com/tfs/TB1..50QpXXXXX7XpXXXXXXXXXX-40-40.png" data-spm-anchor-id="5176.12825654.7y9jhqsfz.i0.e9392c4aW65E8d"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011702005532" target="_blank" title="查看网安联网备案信息" alt="网安联网备案信息" rel="nofollow"><span style="background:#e3e3e3;border-radius:3px;border:1px">沪公网安备 31011702005532 号</span></a><br><br>
+  <a target="_blank" href="https://www.w3.org/WAI/WCAG2AA-Conformance" rel="nofollow">
+  <img src="/apps/vms/img/footer/wcag2AA.gif" alt="Explanation of WCAG 2.0 Level Double-A Conformance" title="Explanation of WCAG 2.0 Level Double-A Conformance"></a>
+  <img src="https://global.ecdn.ltd/direct_path/public/images/ssl_logos/globalsign/oem/white/medium.png" style="height:31px" onclick="window.open('https://myssl.com/seal/detail?domain=volunteer.ensonyan.com','Secured by GlobalSign | 由 GlobalSign SSL提供加密服务','height=800,width=470,top=0,right=0,toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no')" title="CLICK TO VERIFY: This site uses a GlobalSign SSL Certificate to secure your personal information.">
+    </div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        Victor("container", "output");
+        $("#entry_name").focus();
+        $(document).keydown(function(event){
+            if(event.keyCode==13){
+                $("#entry_btn").click();
+            }
+        });
+    });
+</script>
+</body>
+</html>
